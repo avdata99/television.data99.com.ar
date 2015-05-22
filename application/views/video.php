@@ -193,7 +193,7 @@
               <a target='_blank' href="http://twitter.com/data_99"><i class="icon-twitter"></i></a>
               <a target='_blank' href="http://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
               <a target='_blank' href="https://plus.google.com/u/0/+AndresVazquezFlexes/"><i class="icon-google-plus"></i></a>
-              <a target='_blank' href="https://github.com/avdata99"><i class="icon-github"></i></a>
+              <a target='_blank' href="https://github.com/avdata99/television.data99.com.ar"><i class="icon-github"></i></a>
               <a href="mailto:andres@data99.com.ar"><i class="icon-envelope"></i></a>        
             </div>
           </div>
