@@ -117,8 +117,13 @@
                               </p>
                               <small><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a> el <?=$video->fecha." ".$video->hora;?>.</small>
                               
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-text="Mira! <?=$video->title;?>" data-via="elnomoteta" data-lang="es">Twittear</a>
-<div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" 
+    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-text="Mira! <?=$video->title;?>" data-via="cbamedios" data-lang="es">Twittear</a>
+<div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true" data-share="true"></div>
                                                     
                             </div>
 
@@ -172,7 +177,10 @@
                       <?=$video->description?>
                     </p>
                     <small><b><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a></b> el <?=$video->fecha." ".$video->hora;?>.</small>
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-text="Mira! <?=$video->title;?>" data-via="elnomoteta" data-lang="es">Twittear</a>
+<a href="https://twitter.com/share" class="twitter-share-button" 
+    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-text="Mira! <?=$video->title;?>" 
+    data-via="cbamedios" data-lang="es">Twittear</a>
 <div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
  - Tambien lo podes <a href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>">ampliar</a>
 
@@ -273,7 +281,11 @@ src='" . $pub[2]["imagen"] . "'  alt='" . $pub[2]["texto"] . "' title='" . $pub[
                       <?=$video->description?>
                     </p>
 <small><b><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a></b> el <?=$video->fecha." ".$video->hora;?>.</small>
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-text="Mira! <?=$video->title;?>" data-via="elnomoteta" data-lang="es">Twittear</a>
+<a href="https://twitter.com/share" 
+    class="twitter-share-button" 
+    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-text="Mira! <?=$video->title;?>" 
+    data-via="cbamedios" data-lang="es">Twittear</a>
 <div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                     
                   </div>
@@ -329,7 +341,7 @@ src='" . $pub[2]["imagen"] . "'  alt='" . $pub[2]["texto"] . "' title='" . $pub[
           <div class="span4">
             <h4>Get in touch</h4>
             <div class="social-icons-row">
-              <a target='_blank' href="http://twitter.com/elnomoteta"><i class="icon-twitter"></i></a>
+              <a target='_blank' href="http://twitter.com/avdata99"><i class="icon-twitter"></i></a>
               <a target='_blank' href="http://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
               <a target='_blank' href="https://plus.google.com/+AndresVazquezFlexes"><i class="icon-google-plus"></i></a>
               <a target='_blank' href="https://github.com/avdata99/television.data99.com.ar"><i class="icon-github"></i></a>

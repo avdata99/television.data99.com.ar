@@ -91,7 +91,10 @@
               <div class="page-header">
                 <h1><?=$video->title?> <small><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal."</a> el ". $video->fecha?></small></h1>
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo MYhURL ?>/video/<?=$video->video_id;?>" data-text="Mira! <?=$video->title;?>" data-via="elnomoteta" data-lang="es">Twittear</a>
+<a href="https://twitter.com/share" class="twitter-share-button" 
+    data-url="<?php echo MYhURL ?>/video/<?=$video->video_id;?>" 
+    data-text="Mira! <?=$video->title;?>" data-via="cbamedios" 
+    data-lang="es">Twittear</a>
 <div class="fb-like" data-href="<?php echo MYhURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>                
               </div>
             </div>
