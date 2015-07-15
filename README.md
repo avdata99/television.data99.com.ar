@@ -13,3 +13,7 @@ Cargar canales de youtube segun su ID en la base de datos y listo. Hay algunos d
 Para actualizar manualmente (y además cargar en un *cron*) los videos de todos los canales cargados puede usar la URL **/crontv/upAllChannelsToday**.  
 Para actualizar solo un canal **/crontv/upNewChannel/CHANNELID**.  
 El canal (vía CHANNELID) tiene que estar en la base, esto no lo agrega, solo lo actualiza si existe.  
+En cron puede cargarse por ejemplo:  
+`/usr/bin/lynx -dump http://tudominio.com.ar/crontv/upAllChannelsToday`  
+Cada 1 hora (a gusto).  
+
