@@ -2,6 +2,8 @@
 # Turn on URL rewriting
 RewriteEngine On
 
+Header set Access-Control-Allow-Origin "*"
+
 AddDefaultCharset utf-8
 
 # compress text, HTML, JavaScript, CSS, and XML
