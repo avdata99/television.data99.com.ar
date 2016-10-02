@@ -116,56 +116,6 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-<div class="span3">
-              
-    <div class='thumbnail'>
-        <div class='showvideo grid'>
-            <div>
-                <img style='width: 100px;float: left;padding: 20px 30px;' 
-            src='<?= $pub[0]["imagen"] ?>' alt='<?= $pub[0]["texto"] ?>' title='<?= $pub[0]["titulo"] ?>' />
-            </div>
-        </div>
-        <div class='caption'>
-            <h3><?= $pub[0]["titulo"] ?></h3>
-                <p><?= $pub[0]["texto"] ?> <a href='http://<?= $pub[0]["url"] ?>'><?= $pub[0]["url"] ?></a></p>
-        </div>
-    </div>
-    
-</div>
-              
-<div class="span3">
-              
-    <div class='thumbnail'>
-        <div class='showvideo grid'>
-            <div>
-                <img style='width: 100px;float: left;padding: 20px 30px;' 
-            src='<?= $pub[1]["imagen"] ?>' alt='<?= $pub[1]["texto"] ?>' title='<?= $pub[1]["titulo"] ?>' />
-            </div>
-        </div>
-        <div class='caption'>
-            <h3><?= $pub[1]["titulo"] ?></h3>
-                <p><?= $pub[1]["texto"] ?> <a href='http://<?= $pub[1]["url"] ?>'><?= $pub[1]["url"] ?></a></p>
-        </div>
-    </div>
-    
-</div>
-              
-<div class="span3">
-              
-    <div class='thumbnail'>
-        <div class='showvideo grid'>
-            <div>
-                <img style='width: 100px;float: left;padding: 20px 30px;' 
-            src='<?= $pub[2]["imagen"] ?>' alt='<?= $pub[2]["texto"] ?>' title='<?= $pub[2]["titulo"] ?>' />
-            </div>
-        </div>
-        <div class='caption'>
-            <h3><?= $pub[2]["titulo"] ?></h3>
-                <p><?= $pub[2]["texto"] ?> <a href='http://<?= $pub[2]["url"] ?>'><?= $pub[2]["url"] ?></a></p>
-        </div>
-    </div>
-    
-</div>
               
           </div>
           

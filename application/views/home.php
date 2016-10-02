@@ -198,65 +198,28 @@
                     $c = 0;
                     $fila++;
                     echo "</ul></div>";
-if ($fila < 4)
-    {
-    ?>
-<div class='row-fluid'><li class='span12'><ul class='thumbnails' style='overflow: visible'><div class='thumbnail'>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- tvdata99 horiz largo -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-1451436001656992"
-     data-ad-slot="5678609869"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>          
-            </div></ul></li></div>
-    <?php
-    }
-if ($fila == 4)
-{
-echo "<div class='row-fluid'><li class='span12'><ul class='thumbnails' style='overflow: visible'><div class='thumbnail'>
-<div class='showvideo grid'><div><img style='width: 100px;float: left;padding: 20px 30px;' 
-    src='" . $pub[0]["imagen"] . "' alt='" . $pub[0]["texto"] . "' title='" . $pub[0]["titulo"] . "'></div></div>
-<div class='caption'><h3>" . $pub[0]["titulo"] . "</h3>
-<p>" . $pub[0]["texto"] . " <a href='http://" . $pub[0]["url"] . "'>" . $pub[0]["url"] . "</a>
-</p></div></div></li></ul></div>";
-}
+ ?>
+<div class='row-fluid'>
+  <li class='span12'>
+  <ul class='thumbnails' style='overflow: visible'>
+    <div class='thumbnail'>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- tvdata99 horiz largo -->
+        <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-1451436001656992"
+           data-ad-slot="5678609869"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>          
+    </div>
+  </ul>
+  </li>
+</div>
+<div class='row-fluid'>
+  <ul class='thumbnails'>
 
-if ($fila == 5)
-{
-echo "<div class='row-fluid'><li class='span12'><ul class='thumbnails' style='overflow: visible'><div class='thumbnail'>
-<div class='showvideo grid'><div><img style='width: 100px;float: left;padding: 20px 30px;' 
-src='" . $pub[1]["imagen"] . "'  alt='" . $pub[1]["texto"] . "' title='" . $pub[1]["titulo"] . "'></div></div>
-<div class='caption'><h3>" . $pub[1]["titulo"] . "</h3>
-<p>" . $pub[1]["texto"] . " <a href='http://" . $pub[1]["url"] . "'>" . $pub[1]["url"] . "</a>
-</p></div></div></li></ul></div>";
-}
-
-if ($fila == 6)
-{
-echo "<div class='row-fluid'><li class='span12'><ul class='thumbnails' style='overflow: visible'><div class='thumbnail'>
-<div class='showvideo grid'><div><img style='width: 100px;float: left;padding: 20px 30px;' 
-src='" . $pub[2]["imagen"] . "'  alt='" . $pub[2]["texto"] . "' title='" . $pub[2]["titulo"] . "'></div></div>
-<div class='caption'><h3>" . $pub[2]["titulo"] . "</h3>
-<p>" . $pub[2]["texto"] . " <a href='http://" . $pub[2]["url"] . "'>" . $pub[2]["url"] . "</a>
-</p></div></div></li></ul></div>";
-}
-                    echo "<div class='row-fluid'>";
-                    
-                    
-                    
-                    
-                    //SIGUE
-                    echo "<ul class='thumbnails'>";
-                    
-                    
-                
-                    
-                    }
-                }
-                ?>
+  <?php }  } ?>
               
             </ul>
           </div>
