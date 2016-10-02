@@ -1,1 +1,7 @@
 TODOs.php
+application/views/views/*
+application/logs
+application/config/database.php
+application/config/myconfig.php
+
+
