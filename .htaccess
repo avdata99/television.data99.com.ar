@@ -75,13 +75,22 @@ FileETag INode MTime Size
 </FilesMatch>
 
 RewriteCond %{HTTP_HOST} ^latelevisiondigital\.com\.ar
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule (.*) http://television.data99.com.ar/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^latelevisionabierta\.com\.ar
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule (.*) http://television.data99.com.ar/$1 [R=301,L]
 
 #quitar www
 RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [L,R=301]
 
 # If your website begins from a folder e.g localhost/my_project then 
@@ -94,14 +103,23 @@ RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [L,R=301]
 RewriteCond $1 ^(application|system|private|logs)
 
 # Rewrite to index.php/access_denied/URL
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule ^(.*)$ index.php/access_denied/$1 [PT,L]
 
 # Allow these directories and files to be displayed directly:
 RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|assets|myextras)
 
 # No rewriting
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule ^(.*)$ - [PT,L]
 
 # Rewrite to index.php/URL
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule ^(.*)$ index.php/$1 [PT,L]
 </IfModule>
