@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La television abierta de <?=$pais?>. Resumenes de noticias por ciudad y fecha.">
     <meta name="author" content="data 99">
+
+    <meta name="c64" content="<?=$page64?>">
+    <meta name="cu" content="<?=$cache_usado?>">
+    <meta name="cnfo" content="<?=$cache_info?>">
+    
     <title><?=$meta_title?></title>
     <!-- Bootstrap -->
     <link href="/myextras/css/bootstrap.min.css" rel="stylesheet">
