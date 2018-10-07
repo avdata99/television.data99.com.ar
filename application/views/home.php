@@ -25,7 +25,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="/myextras/css/demo.css" /> -->
     <link rel="stylesheet" type="text/css" href="/myextras/css/style_common.css" />
     <link rel="stylesheet" type="text/css" href="/myextras/css/style2.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="/myextras/js/modernizr.custom.69142.js"></script> 
     
     <meta property="og:title" content="La television de <?=$pais?>"/> 
@@ -58,7 +58,7 @@
                   <?php $ubic = ($ciudad != "") ? $ciudad : $pais;?>
                   
                   <li style='width: 150px;padding-top: 10px;'>
-                    <div class="fb-like" data-href="http://television.data99.com.ar/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <div class="fb-like" data-href="https://television.data99.com.ar/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                   </li>
                     
                   
@@ -93,7 +93,7 @@
                     <?php } ?>
                   </ul>
                 </li>
-                <li><a target='_blank' href="http://data99.com.ar">nosotros</a></li>
+                <li><a target='_blank' href="https://data99.com.ar">nosotros</a></li>
               </ul>
             </div>
           </div>
@@ -123,9 +123,9 @@
                               <small><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a> el <?=$video->fecha." ".$video->hora;?>.</small>
                               
 <a href="https://twitter.com/share" class="twitter-share-button" 
-    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-url="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
     data-text="Mira! <?=$video->title;?>" data-via="cbamedios" data-lang="es">Twittear</a>
-<div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+<div class="fb-like" data-href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
     data-layout="standard" 
     data-action="like" 
     data-show-faces="true" data-share="true"></div>
@@ -183,11 +183,11 @@
                     </p>
                     <small><b><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a></b> el <?=$video->fecha." ".$video->hora;?>.</small>
 <a href="https://twitter.com/share" class="twitter-share-button" 
-    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-url="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
     data-text="Mira! <?=$video->title;?>" 
     data-via="cbamedios" data-lang="es">Twittear</a>
-<div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
- - Tambien lo podes <a href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>">ampliar</a>
+<div class="fb-like" data-href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ - Tambien lo podes <a href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>">ampliar</a>
 
 
 
@@ -237,12 +237,12 @@
             <li class="span6">
                 <div class="thumbnail">
                     <div>
-                        <a target="_blank" href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>">
+                        <a target="_blank" href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>">
                             <img style="padding: 4px;float: left; width: auto;" src="<?=$video->th_mini?>" title="<?=$video->title?> en la TV abierta" alt="<?=$video->title?>">
                         </a>
                     </div>
                   <div class="caption">
-                      <a target="_blank" href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>">
+                      <a target="_blank" href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>">
                         <h3 style="font-size: 18px;line-height: 20px;"><?=$video->title?></h3>
                       </a>
                     <p>
@@ -251,10 +251,10 @@
 <small><b><a href="/canal/<?=urlencode(str_replace(" ","-",$video->canal))?>"><?=$video->canal;?></a></b> el <?=$video->fecha." ".$video->hora;?>.</small>
 <a href="https://twitter.com/share" 
     class="twitter-share-button" 
-    data-url="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
+    data-url="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" 
     data-text="Mira! <?=$video->title;?>" 
     data-via="cbamedios" data-lang="es">Twittear</a>
-<div class="fb-like" data-href="http://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://<?php echo MYURL ?>/video/<?=$video->video_id;?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                     
                   </div>
                 </div>
@@ -299,9 +299,9 @@
             <h4><i class="icon-beaker icon-white"></i> About</h4>
             <nav>
               <ul class="quick-links">
-                  <li>Autor: <a href="http://andresvazquez.com.ar">Andrés Vázquez</a></li>
-                <li><a href='http://data99.com.ar'>Data99</a></li>
-                <li><a href="http://andresvazquez.com.ar/blog">Blog</a></li>
+                  <li>Autor: <a href="https://andresvazquez.com.ar">Andrés Vázquez</a></li>
+                <li><a href='https://data99.com.ar'>Data99</a></li>
+                <li><a href="https://andresvazquez.com.ar/blog">Blog</a></li>
                 <li><a href="/rss">RSS TV abierta</a></li>
               </ul>
             </nav>          
@@ -309,8 +309,8 @@
           <div class="span4">
             <h4>Get in touch</h4>
             <div class="social-icons-row">
-              <a target='_blank' href="http://twitter.com/avdata99"><i class="icon-twitter"></i></a>
-              <a target='_blank' href="http://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
+              <a target='_blank' href="https://twitter.com/avdata99"><i class="icon-twitter"></i></a>
+              <a target='_blank' href="https://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
               <a target='_blank' href="https://plus.google.com/+AndresVazquezFlexes"><i class="icon-google-plus"></i></a>
               <a target='_blank' href="https://github.com/avdata99/television.data99.com.ar"><i class="icon-github"></i></a>
               <a href="mailto:andres@data99.com.ar"><i class="icon-envelope"></i></a>        
@@ -371,7 +371,7 @@
 			
         Modernizr.load({
                 test: Modernizr.csstransforms3d && Modernizr.csstransitions,
-                yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','/myextras/js/jquery.hoverfold.js'],
+                yep : ['https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','/myextras/js/jquery.hoverfold.js'],
                 nope: 'css/fallback.css',
                 callback : function( url, result, key ) 
                     {

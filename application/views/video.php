@@ -39,7 +39,7 @@
             <div class="nav-collapse collapse">        
               <ul class="nav pull-right">
                 <li style='width: 150px;padding-top: 10px;'>
-                    <div class="fb-like" data-href="http://television.data99.com.ar/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <div class="fb-like" data-href="https://television.data99.com.ar/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                   </li>
                   <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Canales<b class="caret"></b></a>
@@ -72,7 +72,7 @@
                 </li>
                   
                   
-                <li><a target='_blank' href="http://data99.com.ar">nosotros</a></li>
+                <li><a target='_blank' href="https://data99.com.ar">nosotros</a></li>
               </ul>
             </div>
           </div>
@@ -134,8 +134,8 @@
             <nav>
               <ul class="quick-links">
                 <li>Autor: <a href="http://andresvazquez.com.ar">Andrés Vázquez</a></li>
-                <li><a href='http://data99.com.ar'>Data99</a></li>
-                <li><a href="http://andresvazquez.com.ar/blog">Blog</a></li>
+                <li><a href='https://data99.com.ar'>Data99</a></li>
+                <li><a href="https://andresvazquez.com.ar/blog">Blog</a></li>
                 <li><a href="/rss">RSS TV abierta</a></li>
               </ul>
             </nav>          
@@ -143,8 +143,8 @@
           <div class="span4">
             <h4>Get in touch</h4>
             <div class="social-icons-row">
-              <a target='_blank' href="http://twitter.com/data_99"><i class="icon-twitter"></i></a>
-              <a target='_blank' href="http://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
+              <a target='_blank' href="https://twitter.com/data_99"><i class="icon-twitter"></i></a>
+              <a target='_blank' href="https://ar.linkedin.com/pub/andres-vazquez/20/599/160/"><i class="icon-linkedin"></i></a>                                         
               <a target='_blank' href="https://plus.google.com/u/0/+AndresVazquezFlexes/"><i class="icon-google-plus"></i></a>
               <a target='_blank' href="https://github.com/avdata99/television.data99.com.ar"><i class="icon-github"></i></a>
               <a href="mailto:andres@data99.com.ar"><i class="icon-envelope"></i></a>        
