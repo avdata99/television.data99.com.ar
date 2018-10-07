@@ -9,6 +9,7 @@
     <meta name="c64" content="<?=$page64?>">
     <meta name="cu" content="<?=$cache_usado?>">
     <meta name="cnfo" content="<?=$cache_info?>">
+    <meta name="CIV" content="<?=CI_VERSION?>">
     
     <title><?=$meta_title?></title>
     <!-- Bootstrap -->
