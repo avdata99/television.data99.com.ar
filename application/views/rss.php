@@ -10,12 +10,12 @@
     <channel>
         <title>El feed de la television abierta</title>
         <link><?php echo MYhURL ?>/rss</link>
-        <atom:link href="http://<?php echo MYURL ?>/rss" rel="self" type="application/rss+xml" />
+        <atom:link href="https://<?php echo MYURL ?>/rss" rel="self" type="application/rss+xml" />
         <description>Resumenes de noticias de los mejores canalaes de TV</description>
         <dc:language>es</dc:language>
         <dc:creator>Andres Vazquez - data99</dc:creator>
         <dc:rights>Copyright propio de youtube y los canales de TV</dc:rights>
-        <admin:generatorAgent rdf:resource="http://data99.com.ar" />
+        <admin:generatorAgent rdf:resource="https://data99.com.ar" />
         <?php
         foreach ($videos as $video): ?>
             <item>

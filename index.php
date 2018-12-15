@@ -18,7 +18,14 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+
+
+	if (file_exists('/home/tele/public_html/PROD')) {
+		define('ENVIRONMENT', 'production');
+	} else {
+		define('ENVIRONMENT', 'development');
+	}
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

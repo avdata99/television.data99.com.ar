@@ -52,7 +52,12 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'db_user';
 $db['default']['password'] = 'db_pass';
 $db['default']['database'] = 'db_name';
-$db['default']['dbdriver'] = 'mysql';
+
+# de CI_VERSION 2.1.3 a 2.2.6
+# $db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
+
+
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
