@@ -296,15 +296,14 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="span3">
+          <div class="span8">
             <h4><i class="icon-beaker icon-white"></i> About</h4>
             <nav>
-              <ul class="quick-links">
-                  <li>Autor: <a href="https://andresvazquez.com.ar">Andrés Vázquez</a></li>
-                <li><a href='https://data99.com.ar'>Data99</a></li>
-                <li><a href="https://andresvazquez.com.ar/blog">Blog</a></li>
-                <li><a href="/rss">RSS TV abierta</a></li>
-              </ul>
+            <div>Agregador de noticias automatizado como replica de cientos de sitios de 
+                noticias y periodistas. Los contenidos aquí expuestos no son responsabilidad 
+                directa de los autores.
+                <?=date("Y")?> desarrollado como software libre por Data99.</div>
+            </nav>          
             </nav>          
           </div>
           <div class="span4">
@@ -318,12 +317,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr class="footer-divider">
-      <div class="container">
-        <p>
-          <?=date("Y")?> data 99.
-        </p>
       </div>
     </footer>
     <!-- LASTQ <?=$q?> -->
