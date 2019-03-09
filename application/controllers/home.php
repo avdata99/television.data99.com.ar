@@ -5,30 +5,44 @@ class Home extends CI_Controller {
     public function index()
 	{
         
-        $this->load->driver('cache');
-        
         $data = array();
+        # log_message('error', 'HOME CTRL');
+        # $this->load->driver('cache');
+        # $this->load->driver('cache', array('adapter' => 'apc', 'backup' => 'file'));
+        # $this->load->driver('cache', array('adapter' => 'memcached', 'backup' => 'memcached'));
         $data["cache_usado"] = 'NO';
         
+
         // ver que pagina es
         $vars = $this->uri->ruri_to_assoc();
         $data["vars"] = print_r($vars, true);
         $page64 = base64_encode($data["vars"]);
         $data["page64"] = $page64;
         $cache64 = 'data_home_'.$page64;
-        $data["cache_info"] = $this->cache->cache_info();
-
         $data_home = FALSE;
-        if ($this->cache->memcached->is_supported()) {
+
+        $data["cache_info"] = 'NO';
+        # $data["cache_info"] = $this->cache->cache_info();
+
+        /* 
+        $support_mc = $this->cache->memcached->is_supported();
+        $support_apc = $this->cache->apc->is_supported();
+        $support_file = $this->cache->file->is_supported();
+        log_message('error', 'Memcached ' . $support_mc);
+        log_message('error', 'APC ' . $support_apc);
+        log_message('error', 'FILE ' . $support_file);
+
+        if ($support_mc) {
             $data_home = $this->cache->memcached->get($cache64);
             if ($data_home) {$data_home["cache_usado"] = 'memcache';}
-        } else if ($this->cache->apc->is_supported()) {
+        } else if ($support_apc) {
             $data_home = $this->cache->apc->get($cache64);
             if ($data_home) {$data_home["cache_usado"] = 'apc';}
-        } else if ($this->cache->file->is_supported()) {
+        } else if ($support_file) {
             $data_home = $this->cache->file->get($cache64);
             if ($data_home) {$data_home["cache_usado"] = 'file';}
-        }
+        } 
+        */
 
         if ($data_home) {
             $this->load->view('home', $data_home);
@@ -120,19 +134,20 @@ class Home extends CI_Controller {
                 , "imagen"=>"");
             */
 
-            if ($this->cache->memcached->is_supported()) {
+            /*
+            if ($support_mc) {
                 $this->cache->memcached->save($cache64, $data, 3600);
                 $data["cache_usado"] = 'memcache-grabado';
                 }
-            else if ($this->cache->apc->is_supported()) {
+            else if ($support_apc) {
                 $this->cache->apc->save($cache64, $data, 3600);
                 $data["cache_usado"] = 'apc-grabado';
             }
-            else if ($this->cache->file->is_supported()) {
+            else if ($support_file) {
                 $this->cache->file->save($cache64, $data, 3600);
                 $data["cache_usado"] = 'file-grabado';
             }
-            
+            */
 
             $this->load->view('home', $data);
 
@@ -142,13 +157,22 @@ class Home extends CI_Controller {
     function video($video_id)
         {
         $this->load->model("videos_mdl");
-        $data =  array();
+        $data = array();
         $data["paises"] = $this->videos_mdl->getPaises();
         $data["ciudades"] = $this->videos_mdl->getCiudades();
         $data["canales"] = $this->videos_mdl->getCanales();
         
         $data["video"] = $this->videos_mdl->getVideos("","","","","1","",$video_id);
-        
+        if ($data["video"]) {
+            $data['ciudad'] = $data["video"]->ciudad;
+            $data['pais'] = $data["video"]->pais;
+        } else {
+            log_message('error', 'Video ID no existe? ' . $video_id);
+            show_404();
+            $data['ciudad'] = 'Sin ciudad';
+            $data['pais'] = 'Sin video';
+        }
+
         $data["pub"] = array();
         $data["pub"][] = array(
             "url"=>"aprenderingles.data99.com.ar"
