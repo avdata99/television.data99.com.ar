@@ -109,7 +109,7 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteRule ^(.*)$ index.php/access_denied/$1 [PT,L]
 
 # Allow these directories and files to be displayed directly:
-RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|assets|myextras)
+RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|assets|myextras|ads\.txt)
 
 # No rewriting
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
